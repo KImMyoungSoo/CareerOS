@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerOS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <h1>CareerOS</h1>
+
+            <p class="subtitle">
+                공기업 전산직 Dashboard
+            </p>
+
+        </header>
+
+        <!-- Overall -->
+        <section class="card">
+
+            <h2>📊 전체 준비도</h2>
+
+            <div id="overall-progress" class="big-number">
+                --
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    id="overall-bar"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+            <p id="overall-status">
+                Loading...
+            </p>
+
+        </section>
+
+        <!-- Phase -->
+        <section class="card">
+
+            <h2>🎯 Current Phase</h2>
+
+            <p id="phase-name">
+                Loading...
+            </p>
+
+            <div class="progress-bar">
+
+                <div
+                    id="phase-bar"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+            <p id="phase-progress">
+                --
+            </p>
+
+        </section>
+
+        <!-- Category -->
+        <section class="card">
+
+            <h2>📁 분야별 준비도</h2>
+
+            <div id="category-list">
+
+            </div>
+
+        </section>
+
+        <!-- Subject -->
+        <section class="card">
+
+            <h2>📚 전공 준비도</h2>
+
+            <div id="subject-list">
+
+            </div>
+
+        </section>
+
+        <!-- History -->
+        <section class="card">
+
+            <h2>📈 Progress History</h2>
+
+            <div id="history-list">
+
+            </div>
+
+        </section>
+
+        <!-- PM -->
+        <section class="card">
+
+            <h2>💬 PM Comment</h2>
+
+            <p id="pm-comment">
+
+            </p>
+
+        </section>
+
+        <!-- Update -->
+
+        <section class="card">
+
+            <h2>🔄 Dashboard Update</h2>
+
+            <input
+                type="file"
+                id="updateFile"
+                accept=".json">
+
+            <button id="updateButton">
+                Update Dashboard
+            </button>
+
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

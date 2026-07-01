@@ -1,0 +1,87 @@
+{
+    "project": {
+        "name": "CareerOS",
+        "version": "1.0.0"
+    },
+
+    "overall": {
+        "progress": 78,
+        "status": "🟠 성장구간"
+    },
+
+    "phase": {
+        "name": "공기업 전산학 1회독",
+        "progress": 8
+    },
+
+    "category": {
+        "spec": {
+            "title": "스펙",
+            "progress": 95
+        },
+        "experience": {
+            "title": "실무경력",
+            "progress": 100
+        },
+        "selfIntroduction": {
+            "title": "자소서",
+            "progress": 90
+        },
+        "major": {
+            "title": "전공필기",
+            "progress": 60
+        },
+        "coding": {
+            "title": "코딩테스트",
+            "progress": 45
+        },
+        "ncs": {
+            "title": "NCS",
+            "progress": 30
+        },
+        "interview": {
+            "title": "면접",
+            "progress": 50
+        }
+    },
+
+    "subjects": {
+
+        "database": {
+            "title": "데이터베이스",
+            "progress": 60
+        },
+
+        "operatingSystem": {
+            "title": "운영체제",
+            "progress": 60
+        },
+
+        "network": {
+            "title": "네트워크",
+            "progress": 60
+        },
+
+        "dataStructure": {
+            "title": "자료구조",
+            "progress": 60
+        },
+
+        "computerArchitecture": {
+            "title": "컴퓨터구조",
+            "progress": 35
+        },
+
+        "softwareEngineering": {
+            "title": "소프트웨어공학",
+            "progress": 45
+        },
+
+        "security": {
+            "title": "정보보안",
+            "progress": 35
+        }
+    },
+
+    "pmComment": "현재 프로젝트의 최우선 목표는 공기업 전산학 1회독입니다. 부족한 부분은 정처기·SQLD·정보보안기사로 보완합니다."
+}

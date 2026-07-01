@@ -1,0 +1,306 @@
+/* ===========================
+   CareerOS Dashboard v1.0
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d1117;
+    color: #f0f6fc;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+.container {
+
+    width: 95%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+/* ===========================
+    Header
+=========================== */
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+.header h1 {
+
+    font-size: 40px;
+
+    color: #58a6ff;
+
+}
+
+.subtitle {
+
+    color: #8b949e;
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+}
+
+/* ===========================
+    Card
+=========================== */
+
+.card {
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+
+        0 5px 15px rgba(0,0,0,.3);
+
+}
+
+.card h2 {
+
+    margin-bottom: 20px;
+
+    color: #58a6ff;
+
+}
+
+/* ===========================
+    Big Number
+=========================== */
+
+.big-number {
+
+    font-size: 60px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    margin: 20px 0;
+
+    color: #58a6ff;
+
+}
+
+/* ===========================
+    Progress Bar
+=========================== */
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 18px;
+
+    background: #30363d;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin: 15px 0;
+
+}
+
+.progress-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #238636,
+        #2ea043
+    );
+
+    transition: width .5s;
+
+}
+
+/* ===========================
+    List
+=========================== */
+
+#category-list div,
+#subject-list div {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #30363d;
+
+}
+
+#category-list div:last-child,
+#subject-list div:last-child{
+
+    border: none;
+
+}
+
+/* ===========================
+    History
+=========================== */
+
+.history-item{
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-left:4px solid #58a6ff;
+
+    background:#0d1117;
+
+    border-radius:8px;
+
+}
+
+.history-date{
+
+    color:#58a6ff;
+
+    font-weight:bold;
+
+}
+
+.history-comment{
+
+    color:#8b949e;
+
+    margin-top:8px;
+
+}
+
+/* ===========================
+    PM Comment
+=========================== */
+
+#pm-comment{
+
+    background:#0d1117;
+
+    padding:20px;
+
+    border-radius:8px;
+
+    border-left:4px solid #2ea043;
+
+}
+
+/* ===========================
+    Update
+=========================== */
+
+input[type=file]{
+
+    margin-top:15px;
+
+    margin-bottom:20px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#238636;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#2ea043;
+
+}
+
+/* ===========================
+    Status
+=========================== */
+
+.status-green{
+
+    color:#2ea043;
+
+}
+
+.status-yellow{
+
+    color:#d29922;
+
+}
+
+.status-orange{
+
+    color:#f0883e;
+
+}
+
+.status-red{
+
+    color:#f85149;
+
+}
+
+/* ===========================
+    Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .big-number{
+
+        font-size:42px;
+
+    }
+
+    .container{
+
+        width:96%;
+
+    }
+
+}
