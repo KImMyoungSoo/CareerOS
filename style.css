@@ -142,32 +142,6 @@ body {
 }
 
 /* ===========================
-    List
-=========================== */
-
-#category-list div,
-#subject-list div {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: 12px 0;
-
-    border-bottom: 1px solid #30363d;
-
-}
-
-#category-list div:last-child,
-#subject-list div:last-child{
-
-    border: none;
-
-}
-
-/* ===========================
     History
 =========================== */
 
@@ -302,5 +276,97 @@ button:hover{
         width:96%;
 
     }
+
+}
+
+/* ===========================
+    Progress Item
+=========================== */
+
+.progress-item {
+
+    width: 100%;
+
+    margin-bottom: 24px;
+
+}
+
+.progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    width: 100%;
+
+    gap: 16px;
+
+    margin-bottom: 10px;
+
+}
+
+.progress-title {
+
+    flex: 1;
+
+    color: #f0f6fc;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+.progress-percent {
+
+    min-width: 60px;
+
+    flex-shrink: 0;
+
+    text-align: right;
+
+    color: #58a6ff;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+.small-progress-bar {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #30363d;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+.small-progress-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #238636,
+        #2ea043
+    );
+
+    transition: width .8s ease;
 
 }

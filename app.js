@@ -74,8 +74,7 @@ function renderPhase(data) {
 
 function renderCategory(data) {
 
-    const container =
-        document.getElementById("category-list");
+    const container = document.getElementById("category-list");
 
     container.innerHTML = "";
 
@@ -84,10 +83,36 @@ function renderCategory(data) {
         const item = data.category[key];
 
         container.innerHTML += `
-            <div>
-                <span>${item.title}</span>
-                <strong>${item.progress}%</strong>
+
+        <div class="progress-item">
+
+            <div class="progress-header">
+
+                <span class="progress-title">
+
+                    ${item.title}
+
+                </span>
+
+                <span class="progress-percent">
+
+                    ${item.progress}%
+
+                </span>
+
             </div>
+
+            <div class="small-progress-bar">
+
+                <div
+                    class="small-progress-fill"
+                    style="width:${item.progress}%">
+                </div>
+
+            </div>
+
+        </div>
+
         `;
 
     }
@@ -100,8 +125,7 @@ function renderCategory(data) {
 
 function renderSubjects(data) {
 
-    const container =
-        document.getElementById("subject-list");
+    const container = document.getElementById("subject-list");
 
     container.innerHTML = "";
 
@@ -110,10 +134,36 @@ function renderSubjects(data) {
         const item = data.subjects[key];
 
         container.innerHTML += `
-            <div>
-                <span>${item.title}</span>
-                <strong>${item.progress}%</strong>
+
+        <div class="progress-item">
+
+            <div class="progress-header">
+
+                <span class="progress-title">
+
+                    ${item.title}
+
+                </span>
+
+                <span class="progress-percent">
+
+                    ${item.progress}%
+
+                </span>
+
             </div>
+
+            <div class="small-progress-bar">
+
+                <div
+                    class="small-progress-fill"
+                    style="width:${item.progress}%">
+                </div>
+
+            </div>
+
+        </div>
+
         `;
 
     }
